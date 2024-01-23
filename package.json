@@ -13,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "firebase": "^9.8.3",
+    "gsap": "^3.12.5",
     "gsap-trial": "^3.9.0",
     "leaflet": "^1.7.1",
     "loaders.css": "^0.1.2",
@@ -23,6 +24,7 @@
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
     "sass": "^1.49.9",
+    "three": "^0.160.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
