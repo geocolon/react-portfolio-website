@@ -10,6 +10,7 @@ import {
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Terminalbash from './videos/terminalbash.mp4';
 import './index.scss'
 
 const About = () => {
@@ -71,6 +72,12 @@ const About = () => {
           </div>
         </div>
       </div>
+      <div className="background-video">
+      <video autoPlay muted loop id="video-background" style={{ opacity: 0.1 }}>
+          <source src={Terminalbash} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+    </div>
       <Loader type="pacman" />
     </>
   )
