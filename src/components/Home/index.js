@@ -76,10 +76,11 @@ const Home = () => {
       {/* <Logo /> */}
     </div>
     <div className="background-video">
-      <video autoPlay muted loop id="video-background" style={{ opacity: 0.6 }}>
-          <source src={CyberWorld} type="video/mp4" />
+      <video autoPlay muted loop playsInline id="video-background" className="fullscreen-video" style={{ opacity: 0.6 }}>
+        <source src={CyberWorld} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+      <div className="overlay"></div> {/* Overlay element */}
     </div>
     <Loader type="pacman" />
     </>

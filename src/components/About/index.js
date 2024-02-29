@@ -34,19 +34,12 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a very ambitious front-end developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+          Experienced Full-Stack Engineer with a background in SaaS solutions in air-gapped environments. React Typescript, NodeJS, Flutter, Linux, DevOps, and other technologies.
           </p>
           <p align="LEFT">
-            I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
+          Proficient in AWS cloud services and machine learning training with 3D models and scans with Unity. This ML process produces 95-98% accuracy for computer object detection.
           </p>
-          <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
-          </p>
+        
         </div>
 
         <div className="stage-cube-cont">
@@ -72,12 +65,13 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="background-video">
-      <video autoPlay muted loop id="video-background" style={{ opacity: 0.1 }}>
-          <source src={Terminalbash} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-    </div>
+        <div className="background-video">
+        <video autoPlay muted loop playsInline id="video-background" className="fullscreen-video" style={{ filter: 'blur(5px)', opacity: 0.6 }}>
+            <source src={Terminalbash} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        <div className="overlay"></div> {/* Overlay element */}
+      </div>
       <Loader type="pacman" />
     </>
   )

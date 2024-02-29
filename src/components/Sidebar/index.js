@@ -6,14 +6,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
   faGithub,
-  faYoutube,
-  faSkype,
+  // faYoutube,
+  // faSkype,
 } from '@fortawesome/free-brands-svg-icons'
 import {
   faHome,
   faUser,
   faEnvelope,
-  faSuitcase,
+  // faSuitcase,
   faBars,
   faClose,
 } from '@fortawesome/free-solid-svg-icons'
@@ -72,7 +72,7 @@ const Sidebar = () => {
       <ul>
         <li>
           <a
-            href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/"
+            href="https://www.linkedin.com/in/geocolon/"
             target="_blank"
             rel="noreferrer"
           >
@@ -85,34 +85,12 @@ const Sidebar = () => {
         </li>
         <li>
           <a
-            href="https://github.com/bobangajicsm"
+            href="https://github.com/geocolon"
             target="_blank"
             rel="noreferrer"
           >
             <FontAwesomeIcon
               icon={faGithub}
-              color="#4d4d4e"
-              className="anchor-icon"
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.youtube.com/channel/UCBu5ulO4d-d47lAVybpRTkw"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon
-              icon={faYoutube}
-              color="#4d4d4e"
-              className="anchor-icon"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="skype:live:bobangajicsm" rel="noreferrer" target="_blank">
-            <FontAwesomeIcon
-              icon={faSkype}
               color="#4d4d4e"
               className="anchor-icon"
             />
