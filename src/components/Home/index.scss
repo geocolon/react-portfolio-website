@@ -138,6 +138,13 @@
 
 }
 
+.job-title {
+  white-space: nowrap; /* Prevent wrapping for larger screens */
+  .mobile-only {
+    display: none;
+  }
+}
+
 
 
 
@@ -146,6 +153,14 @@
   .home-page h1:before,
   .home-page h1:after {
     display: none;
+  }
+
+  .job-title {
+    padding: 0px 10px;
+    white-space: normal; /* Allow wrapping for smaller screens */
+    .mobile-only {
+      display: block;
+    }
   }
 
   .home-page .text-zone {

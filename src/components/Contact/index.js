@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+// import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 // import { useRef } from 'react'
 // import emailjs from '@emailjs/browser'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Contactvideo from './videos/contactvideo.mp4';
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
@@ -50,10 +53,18 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially on ambitious
-            or large projects. However, if you have any other requests or
-            questions, don't hesitate to contact me using below form either.
+           Greetings,
           </p>
+          <p>
+            As a professional in the field, I'm deeply passionate about cyber security and cloud computing, particularly within the realms of AWS and Google Cloud. Freelancing allows me to explore ambitious endeavors, especially those revolving around these pivotal areas of technology.
+          </p>
+          <p>
+            If you're embarking on a substantial project or seeking expertise in cyber security or cloud computing, I'm eager to lend my skills and knowledge. However, I'm equally open to discussing any other opportunities or inquiries you may have.
+          </p>
+          <p>
+            Please don't hesitate to reach out via links below. I'm here to discuss and contribute to your tech endeavors in any way possible.
+          </p>
+          
           {/* <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
               <ul>
@@ -90,7 +101,7 @@ const Contact = () => {
             </form>
           </div> */}
         </div>
-        <div className="info-map">
+        {/* <div className="info-map">
           George Colón,
           <br />
           United States,
@@ -98,14 +109,19 @@ const Contact = () => {
           Los Angeles, California <br />
           <br />
           <span>george@dynamodesigns.co</span>
-        </div>
+        </div> */}
         <div className="map-wrap">
-          <MapContainer center={[34.052235, -118.243683]} zoom={13}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[44.96366, 19.61045]}>
-              <Popup>George lives around here, and looking forward to working with you:)</Popup>
-            </Marker>
-          </MapContainer>
+          <div className="contact-icons">
+              <a href="mailto:your.email@example.com" className="icon-link">
+                <FontAwesomeIcon icon={faEnvelope} className="icon" />
+              </a>
+              <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer" className="icon-link">
+                <FontAwesomeIcon icon={faLinkedin} className="icon" />
+              </a>
+              <a href="https://github.com/your-github-profile" target="_blank" rel="noopener noreferrer" className="icon-link">
+                <FontAwesomeIcon icon={faGithub} className="icon" />
+              </a>
+            </div>
         </div>
       </div>
       <div className="background-video">

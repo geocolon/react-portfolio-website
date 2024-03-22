@@ -19,8 +19,9 @@ const Home = () => {
     'w',
     'a',
     'r',
-    'e',
-    ' ',
+    'e'
+  ]
+  const jobArray2 = [
     'E',
     'n',
     'g',
@@ -29,7 +30,7 @@ const Home = () => {
     'e',
     'e',
     'r',
-    '.',
+    '.'
   ]
 
   useEffect(() => {
@@ -46,6 +47,7 @@ const Home = () => {
       
       <div className="text-zone">
         <h1>
+        <div className="job-title">
           <span className={letterClass}>H</span>
           <span className={`${letterClass} _12`}>i,</span>
           <br />
@@ -55,18 +57,28 @@ const Home = () => {
           {/* <img
             src={LogoTitle}
             alt="JavaScript Developer Name, Web Developer Name"
-          /> */}
+        /> */}
+
           <AnimatedLetters
             letterClass={letterClass}
             strArray={nameArray}
             idx={15}
           />
           <br />
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={jobArray}
-            idx={22}
-          />
+          
+
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={jobArray}
+              idx={18}
+            />
+            <br className="mobile-only" /> {/* Break to the next line on mobile */}
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={jobArray2}
+                idx={18}
+              />
+          </div>
         </h1>
         <h2>Fullstack Developer / JavaScript Expert / A.I. with Python / </h2>
         <Link to="/contact" className="flat-button">
