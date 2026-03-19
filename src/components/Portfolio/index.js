@@ -26,7 +26,7 @@ const Portfolio = () => {
       description: 'A responsive portfolio website built with React and Sass.',
       tech: 'JavaScript',
       phase: 'React Development',
-      url: 'https://github.com/geocolon/portfolio',
+      url: 'https://github.com/geocolon/portfolio-website',
     },
     {
       name: 'Supabase Tutorial',
