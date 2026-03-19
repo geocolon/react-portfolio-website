@@ -15,6 +15,13 @@ const Portfolio = () => {
 
   const projects = [
     {
+      name: 'GitHub Portfolio',
+      description: 'Here is my GitHub portfolio showcasing my projects and contributions, including repositories, commits, and pull requests.',
+      tech: 'GitHub API',
+      phase: 'GitHub API and Data Visualization',
+      url: 'https://github.com/geocolon',
+    },
+    {
       name: 'Blerdalerts',
       description: 'A web-based notes application with user authentication powered by Keycloak, featuring a Python Flask backend and JavaScript frontend.',
       tech: 'Python',
