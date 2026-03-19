@@ -15,18 +15,53 @@ const Portfolio = () => {
 
   const projects = [
     {
-      name: 'Worker Agents System',
-      description: 'A team of specialized Python agents that manage study sessions, quiz knowledge, and track learning progress.',
+      name: 'Blerdalerts',
+      description: 'A web-based notes application with user authentication powered by Keycloak, featuring a Python Flask backend and JavaScript frontend.',
       tech: 'Python',
-      phase: 'Phase 1 - Python Foundations',
-      github: 'https://github.com/geocolon/worker-agents',
+      phase: 'Python Web Development',
+      url: 'https://github.com/geocolon/NotesApp',
     },
     {
-      name: 'Calculator Project',
-      description: 'Progressive calculator with three challenges: basic operations, memory function, and history log.',
-      tech: 'Python',
-      phase: 'Phase 1 - Python Foundations',
-      github: 'https://github.com/geocolon/calculator',
+      name: 'My Portfolio',
+      description: 'A responsive portfolio website built with React and Sass.',
+      tech: 'JavaScript',
+      phase: 'React Development',
+      url: 'https://github.com/geocolon/portfolio',
+    },
+    {
+      name: 'Supabase Tutorial',
+      description: 'A tutorial for building a web application with Supabase.',
+      tech: 'Supabase',
+      phase: 'PostgreSQL and Backend Development',
+      url: 'https://github.com/geocolon/Supabase-Tutorial-for-Beginners',
+    },
+    {
+      name: 'The Dog Ronin',
+      description: 'A WordPress website for a dog care business.',
+      tech: 'WordPress',
+      phase: 'Web Development',
+      url: 'https://www.thedogronin.com/',
+    },
+    {
+      name: 'Sauron Capital',
+      description: 'A WordPress website for a financial services business.',
+      tech: 'WordPress',
+      phase: 'Web Development',
+      url: 'https://www.sauronacapital.com/',
+    },
+    {
+      name: 'BKNY Gamers',
+      description: 'A WordPress website for a gaming community.',
+      tech: 'WordPress',
+      phase: 'Web Development',
+      url: 'https://www.bknygamers.com/',
+    },
+    {
+      name: 'UX Design Kit',
+      description: 'A WordPress website for a design resources community.',
+      tech: 'WordPress',
+      phase: 'Web Development',
+      url: 'https://uxdesignkit.com/',
     },
   ]
 
@@ -50,7 +85,7 @@ const Portfolio = () => {
                 <span>Tech: </span>{project.tech}
               </div>
               <div className="project-links">
-                <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn-github">GitHub</a>
+                <a href={project.url} target="_blank" rel="noopener noreferrer" className="btn-github">Link</a>
               </div>
             </div>
           ))}
